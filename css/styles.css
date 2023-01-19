@@ -60,18 +60,18 @@ html, body {
     margin-bottom: 30px;
 }
 
-.div2, .div3 {
+.div2, .div3, .div4, .div5 {
     position: relative;
     top: 8vh;
     padding-left: 15px;
 }
 
- .div4, .div5 {
+ /* .div4, .div5 {
     position: relative;
     top: 5vh;
     padding-left: 15px;
 
-}
+} */
 
 .div6, .div7 {
     position: relative;
