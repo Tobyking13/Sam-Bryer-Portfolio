@@ -1,51 +1,102 @@
 html, body {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
+    position: absolute;
 }
 
-#border-box {
+.parent { 
     border: solid black;
+    box-sizing: border-box;
+    display: grid; 
+    height: calc(100vh - 60px);
+    width: calc(100vw - 60px);
     margin: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;    
 }
+    .div1 { grid-area: 1 / 1 / 2 / 2; } 
+    .div2 { 
+        grid-area: 2 / 1 / 3 / 2; 
+        width: auto;
+    height: 100%;
+
+    } 
+    .div3 { grid-area: 3 / 1 / 4 / 2; 
+        width: auto;
+        height: 100%;} 
+    .div4 { grid-area: 4 / 1 / 5 / 2; 
+        width: auto;
+        height: 100%;} 
+    .div5 { grid-area: 5 / 1 / 6 / 2; } 
+    .div6 { grid-area: 6 / 1 / 7 / 2; } 
+    .div7 { grid-area: 7 / 1 / 8 / 2; } 
+    .div8 { grid-area: 8 / 1 / 9 / 3; } 
+    .div10 { grid-area: 1 / 2 / 2 / 3; } 
+    .div11 { grid-area: 2 / 2 / 3 / 3; } 
+    .div12 { grid-area: 3 / 2 / 4 / 3; } 
+    .div13 { grid-area: 4 / 2 / 5 / 3; } 
+    .div14 { grid-area: 5 / 2 / 6 / 3; } 
+    .div15 { grid-area: 6 / 2 / 7 / 3; } 
+    .div17 { grid-area: 1 / 3 / 10 / 7; } 
 
 #logo {
     position: relative;
-    right: 10px;
-    bottom: 10px;
-    width: 180px;
-    height: 180px;
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
     border: 10px solid white;
 }
 
 #brands {
-    width: 90%;
-    margin-left: 10px;
+    width: auto;
+    height: 100%;
 }
 
-#text-box-1 {
-    font-family: 'VCR OSD Mono', sans-serif;
-    width: 50% !important;      
-    padding-left: 15px;   
-    margin-bottom: 10px;
+.div1 {
+    margin-bottom: 30px;
 }
 
-.text-box-2 {
-    font-family: 'VCR OSD Mono', sans-serif;
-    width: 50% !important;      
-    padding-left: 15px;   
+.div2, .div3 {
+    position: relative;
+    top: 8vh;
+    padding-left: 15px;
 }
 
-.text-box-3 {
-    font-family: 'VCR OSD Mono', sans-serif;
-    width: 100% !important;      
-    padding-left: 15px;   
-    margin-top: 10px;
+ .div4, .div5 {
+    position: relative;
+    top: 5vh;
+    padding-left: 15px;
+
 }
 
-.text-box-4 {
+.div6, .div7 {
+    position: relative;
+    top: 10vh;
+    padding-left: 15px;
+
+}
+
+.div8 {
+    position: relative;
+    bottom: -6vh;
+    padding-left: 15px;
+
+}
+
+.div10, .div11, .div12, .div13, .div14, .div15 {
+    width: 50%;
+}
+
+#contact-form {
+    margin-bottom: 200px !important;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
     font-family: 'VCR OSD Mono', sans-serif;
-    width: 100% !important;      
-    padding-left: 15px;   
 }
 
 a {
@@ -72,27 +123,42 @@ h4 {
 
 h5 {
     font-size: 10px !important;
-    padding-top: 10px;
 }
 
 .footer-text {
     color: grey;
-    position: relative;
-    bottom: 30px;
-    left: 30px;
-}
-
-.slideshow {
-    position: relative;
-    height: 100px;
-    top: -30px;
+    position: absolute;
+    bottom: 5px;
+    left: 45px
 }
 
 #portfolio {
-    position: absolute;
+    position: relative !important;
+    height: 100vh;
+    width: 150%; /* width should be greater than the width of the image */
+
+    
+    
+    animation: slide-left 30s linear infinite;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+@keyframes slide-left {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-50%); } /* translate the image to the left by 50% of the element's width */
+}
+
+.div17 {
+    position: relative !important;
+
+    overflow: hidden;
     height: 100vh;
     top: -30px;
+    width: 150%;
     box-shadow: -10px 0px 10px 1px #aaaaaa;
+
 }
 
 #portfolio img {
