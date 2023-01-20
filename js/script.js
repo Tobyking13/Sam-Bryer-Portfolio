@@ -4,8 +4,3 @@ $(document).ready(function() {
     });
 });
 
-var audio = document.querySelector('audio');
-
-document.body.addEventListener('mousemove', function(e) {
-   audio.play()
-})

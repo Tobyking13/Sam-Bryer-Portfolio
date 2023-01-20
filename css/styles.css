@@ -329,6 +329,7 @@ h5 {
 
 .modal h1,
 .modal h2,
-.modal p {
+.modal p,
+.modal .btn {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
