@@ -1,167 +1,334 @@
-html, body {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    position: absolute;
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
 }
 
-.parent { 
-    border: solid black;
-    box-sizing: border-box;
-    display: grid; 
-    height: calc(100vh - 60px);
-    width: calc(100vw - 60px);
-    margin: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;    
+.parent {
+  border: solid black;
+  box-sizing: border-box;
+  display: grid;
+  height: calc(100vh - 60px);
+  width: calc(100vw - 60px);
+  margin: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
 }
-    .div1 { grid-area: 1 / 1 / 2 / 2; } 
-    .div2 { 
-        grid-area: 2 / 1 / 3 / 2; 
-        width: auto;
-    height: 100%;
-
-    } 
-    .div3 { grid-area: 3 / 1 / 4 / 2; 
-        width: auto;
-        height: 100%;} 
-    .div4 { grid-area: 4 / 1 / 5 / 2; 
-        width: auto;
-        height: 100%;} 
-    .div5 { grid-area: 5 / 1 / 6 / 2; } 
-    .div6 { grid-area: 6 / 1 / 7 / 2; } 
-    .div7 { grid-area: 7 / 1 / 8 / 2; } 
-    .div8 { grid-area: 8 / 1 / 9 / 3; } 
-    .div10 { grid-area: 1 / 2 / 2 / 3; } 
-    .div11 { grid-area: 2 / 2 / 3 / 3; } 
-    .div12 { grid-area: 3 / 2 / 4 / 3; } 
-    .div13 { grid-area: 4 / 2 / 5 / 3; } 
-    .div14 { grid-area: 5 / 2 / 6 / 3; } 
-    .div15 { grid-area: 6 / 2 / 7 / 3; } 
-    .div17 { grid-area: 1 / 3 / 10 / 7; } 
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  width: auto;
+  height: 100%;
+}
+.div3 {
+  grid-area: 3 / 1 / 4 / 2;
+  width: auto;
+  height: 100%;
+}
+.div4 {
+  grid-area: 4 / 1 / 5 / 2;
+  width: auto;
+  height: 100%;
+}
+.div5 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.div6 {
+  grid-area: 6 / 1 / 7 / 2;
+}
+.div7 {
+  grid-area: 7 / 1 / 8 / 2;
+}
+.div8 {
+  grid-area: 8 / 1 / 9 / 3;
+}
+.div10 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div11 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div12 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div13 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.div14 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+.div15 {
+  grid-area: 6 / 2 / 7 / 3;
+}
+.div17 {
+  grid-area: 1 / 3 / 10 / 7;
+}
 
 #logo {
-    position: relative;
-    top: -10px;
-    left: -10px;
-    width: 150px;
-    height: 150px;
-    border: 10px solid white;
+  position: relative;
+  top: -12px;
+  left: -12px;
+  width: 150px;
+  height: 150px;
+  border: 10px solid white;
 }
 
 #brands {
-    width: auto;
-    height: 100%;
+  width: auto;
+  height: 100%;
 }
 
 .div1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.div2, .div3, .div4, .div5 {
-    position: relative;
-    top: 8vh;
-    padding-left: 15px;
+.div2,
+.div3,
+.div4,
+.div5 {
+  position: relative;
+  top: 8vh;
+  padding-left: 15px;
 }
 
- /* .div4, .div5 {
+/* .div4, .div5 {
     position: relative;
     top: 5vh;
     padding-left: 15px;
 
 } */
 
-.div6, .div7 {
-    position: relative;
-    top: 10vh;
-    padding-left: 15px;
-
+.div6,
+.div7 {
+  position: relative;
+  top: 10vh;
+  padding-left: 15px;
 }
 
 .div8 {
-    position: relative;
-    bottom: -6vh;
-    padding-left: 15px;
-
+  position: relative;
+  bottom: -6vh;
+  padding-left: 15px;
 }
 
-.div10, .div11, .div12, .div13, .div14, .div15 {
-    width: 50%;
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15 {
+  width: 50%;
 }
 
 #contact-form {
-    margin-bottom: 200px !important;
+  margin-bottom: 200px !important;
 }
 
-h1, h2, h3, h4, h5, h6, a, p {
-    font-family: 'VCR OSD Mono', sans-serif;
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: "VCR OSD Mono", sans-serif;
 }
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 h1 {
-    font-size: 25px !important;
+  font-size: 25px !important;
 }
 
 h2 {
-    font-size: 20px !important;
-    color: #00ddff;
-    text-align: justify;
+  font-size: 20px !important;
+  color: #00ddff;
+  text-align: justify;
 }
 
 h3 {
-    font-size: 15px !important;
+  font-size: 15px !important;
 }
 
 h4 {
-    font-size: 10px !important;
+  font-size: 10px !important;
 }
 
 h5 {
-    font-size: 10px !important;
+  font-size: 10px !important;
 }
 
 .footer-text {
-    color: grey;
-    position: absolute;
-    bottom: 5px;
-    left: 45px
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+  color: grey;
+  position: absolute;
+  bottom: 5px;
+  left: 45px;
 }
 
 #portfolio {
-    position: relative !important;
-    height: 100vh;
-    width: 150%; /* width should be greater than the width of the image */
-
-    
-    
-    animation: slide-left 30s linear infinite;
-    z-index: 1;
-    overflow: hidden;
+  position: relative !important;
+  height: 100vh;
+  width: 150%; /* width should be greater than the width of the image */
+  animation: slide-left 30s linear infinite;
+  z-index: 1;
+  overflow: hidden;
 }
 
-
 @keyframes slide-left {
-    from { transform: translateX(0%); }
-    to { transform: translateX(-50%); } /* translate the image to the left by 50% of the element's width */
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  } /* translate the image to the left by 50% of the element's width */
 }
 
 .div17 {
-    position: relative !important;
-
-    overflow: hidden;
-    height: 100vh;
-    top: -30px;
-    width: 150%;
-    box-shadow: -10px 0px 10px 1px #aaaaaa;
-
+  position: relative !important;
+  overflow: hidden;
+  height: 100vh;
+  top: -30px;
+  width: 150%;
+  box-shadow: -10px 0px 10px 1px #aaaaaa;
 }
 
 #portfolio img {
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
+}
+
+.modal {
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: transparent;
+}
+.modal .logo a img {
+  width: 30px;
+}
+.modal .modal-content {
+  background-color: transparent;
+  border: none;
+  border-radius: 7px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+
+}
+.modal .modal-content .modal-body {
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+  -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.9);
+}
+.modal .modal-content .modal-body h2 {
+  font-size: 18px;
+}
+.modal .modal-content .modal-body p {
+  color: #777;
+  font-size: 14px;
+}
+.modal .modal-content .modal-body h3 {
+  color: #000;
+  font-size: 22px;
+}
+.modal .modal-content .modal-body .close-btn {
+  color: #000;
+}
+.modal .modal-content .modal-body .promo-img {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px !important;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+.modal .cancel {
+  color: gray;
+  font-size: 14px;
+}
+.modal .btn-primary {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form-control {
+  border: transparent;
+  border: 1px solid #ccc;
+}
+.form-control:active,
+.form-control:focus,
+.form-control:hover {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  border-radius: 4px;
+  border: none;
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  animation-name: slide;
+  animation-duration: 60s;
+  animation-iteration-count: infinite !important;
+  background-image: url('../images/WEBSITE-IMAGE\ LONG-01.jpg');
+
+}
+
+
+/* .promo-img {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+} */
+
+@keyframes slide {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  } /* translate the image to the left by 50% of the element's width */
+}
+
+.logo img {
+  width: 70px;
+}
+
+.custom-note {
+  color: #999;
+}
+.custom-note a {
+  color: #555;
+  font-weight: 900 !important;
+}
+
+#message {
+  height: 100px;
+}
+
+.btn  {
+  border-radius: 0px !important;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px !important;
+  border: none;
+}
+
+.modal h1,
+.modal h2,
+.modal p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
