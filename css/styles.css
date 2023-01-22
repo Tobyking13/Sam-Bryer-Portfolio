@@ -18,6 +18,72 @@ body {
   grid-column-gap: 5px;
   grid-row-gap: 5px;
 }
+
+
+@media only screen and (max-width: 760px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 3 / 1 / 4 / 2; }
+    .div4 { grid-area: 4 / 1 / 5 / 2; }
+    .div5 { grid-area: 5 / 1 / 6 / 2; }
+    .div6 { grid-area: 6 / 1 / 7 / 2; }
+    .div7 { grid-area: 7 / 1 / 8 / 2; }
+    .div8 { grid-area: 8 / 1 / 9 / 2; }
+    .div9 { grid-area: 9 / 1 / 10 / 2; }
+    .div17 { 
+      grid-area: 10 / 1 / 11 / 2; 
+      /* position: relative !important; */
+      overflow: hidden;
+      /* height: 105vh; */
+      /* top: -33px; */
+      width: 100%;
+      box-shadow: -10px 0px 10px 1px #aaaaaa;
+    }
+
+
+  /* adjust font-size */
+  h1 {
+    font-size: 15px !important;
+  }
+
+  h2 {
+    font-size: 12px !important;
+  }
+
+  /* other styles */
+}
+@media only screen and (max-width: 375px) {
+  .parent {
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+  }
+
+  /* adjust font-size */
+  h1 {
+    font-size: 10px !important;
+  }
+
+  h2 {
+    font-size: 8px !important;
+  }
+
+  /* other styles */
+}
+
+
+
+
+
 .div1 {
   grid-area: 1 / 1 / 2 / 2;
 }
@@ -82,6 +148,7 @@ body {
 #brands {
   /* position: relative;
   bottom: 40px; */
+  max-width: 100%;
   width: auto;
   height: 150px;
 }
