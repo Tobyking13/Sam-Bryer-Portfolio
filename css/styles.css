@@ -418,5 +418,20 @@ h5 {
   .div17 #portfolio {
     width: 100vw;
     height: auto;
+    animation: slide-left-small 15s linear infinite;
+}
+
+@keyframes slide-left-small {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  } /* translate the image to the left by 50% of the element's width */
+}
+  
+
+  .footer-text {
+    display: none;
   }
 }
