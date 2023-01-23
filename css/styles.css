@@ -378,13 +378,21 @@ h5 {
   .div7 {
     display: flex;
     justify-content: center;
-    width: 65%; 
+    width: 60%; 
     height: 10%;
     text-align: center; 
     margin-left: 10%;
-    margin-right: 10%
+    margin-right: 10%;
+  }
+  
+  .div2 h1 {
+    display: flex;
+    justify-content: center;
   }
 
+  .div7 {
+    margin-top: 10%;
+  }
 
   .div8 {
     position: relative;
