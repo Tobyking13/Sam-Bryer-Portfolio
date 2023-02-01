@@ -501,7 +501,7 @@ h5 {
   }
 }
 
-@media only screen and (max-height: 1000px) {
+/* @media only screen and (max-height: 1000px) {
   html,
   body {
     width: 100vw;
@@ -516,7 +516,7 @@ h5 {
     text-align: center;
     height: 125vh;
     border: 1px solid black;
-    /* border-bottom: 0; */
+    /* border-bottom: 0; 
     margin: 3%;
     z-index: -1;
   }
@@ -545,7 +545,7 @@ h5 {
     left: -50%;
     height: 90%;
   }
-}
+} */
 
 @media only screen and (max-width: 550px), screen and (max-height: 830px) {
   html,
@@ -562,7 +562,7 @@ h5 {
     text-align: center;
     height: 125vh;
     border: 1px solid black;
-    /* border-bottom: 0; */
+    border-bottom: 0;
     margin: 3%;
     z-index: -1;
   }
@@ -646,8 +646,6 @@ h5 {
   h5 {
     font-size: 8px !important;
   }
-  
-
 
   .div17 {
     position: absolute;
@@ -662,4 +660,4 @@ h5 {
     left: -75%;
     height: auto;
   }
-}
+} 
