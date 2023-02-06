@@ -295,7 +295,7 @@ h5 {
   animation-name: slide;
   animation-duration: 60s;
   animation-iteration-count: infinite !important;
-  background-image: url("../images/WEBSITE-IMAGE\ LONG-01.jpg");
+  background-image: url("../images/WEBSITE-IMAGE-LONG\ YES-01.jpg");
 }
 
 @keyframes slide {
@@ -488,9 +488,9 @@ h5 {
   }
 
   .div8 {
-    width: 200%;
+    width: 150% !important;
     left: -50%;
-    height: 60%;
+    height: 70%;
   }
 
   .footer-text {
@@ -547,7 +547,7 @@ h5 {
   }
 } */
 
-@media only screen and (max-width: 550px), screen and (max-height: 830px) {
+@media only screen and (max-width: 550px) {
   html,
   body {
     width: 100vw;
@@ -562,7 +562,7 @@ h5 {
     text-align: center;
     height: 125vh;
     border: 1px solid black;
-    border-bottom: 0;
+    /* border-bottom: 0; */
     margin: 3%;
     z-index: -1;
   }
@@ -600,22 +600,24 @@ h5 {
     margin: 0;
   }
 
-  .div6,
-  .div7 {
-    width: 60%;
+  .div6 h2 {
     position: relative;
     top: 0;
-    left: 0;
-    padding: 0;
+
+    left: -10px;
+
     margin: auto;
     align-items: center;
   }
 
-  .div7 {
-    margin-top: auto;
-    margin-bottom: auto;
-    top: 25%;
-    left: -25%;
+  .div7 h2 {
+    position: relative;
+    top: -15px;
+
+    left: 5px;
+
+    margin: auto;
+    align-items: center;
   }
 
   h1 {
@@ -638,11 +640,11 @@ h5 {
   h3 {
     font-size: 12px !important;
   }
-  
+
   h4 {
     font-size: 8px !important;
   }
-  
+
   h5 {
     font-size: 8px !important;
   }
@@ -656,8 +658,16 @@ h5 {
   }
 
   .div8 {
-    width: 250%;
-    left: -75%;
-    height: auto;
+    position: relative;
+    left: -30%;
   }
-} 
+  #brands {
+    width: 200px;
+    height: 100px;
+  }
+
+  .footer-text {
+    display: none !important; 
+ 
+  }
+}
