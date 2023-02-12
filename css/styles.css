@@ -88,7 +88,7 @@ body {
   bottom: 40px; */
   max-width: 100%;
   width: auto;
-  height: 150px;
+  height: 120px;
 }
 
 .div1 {
@@ -113,7 +113,7 @@ body {
 
 .div6 {
   position: relative;
-  top: 10vh;
+  top: 9vh;
   padding-left: 15px;
 }
 
@@ -126,6 +126,7 @@ body {
 .div8 {
   position: relative;
   padding-left: 15px;
+
 }
 
 .div10,
@@ -490,7 +491,7 @@ h5 {
   .div8 {
     width: 150% !important;
     left: -50%;
-    height: 70%;
+    height: 60%;
   }
 
   .footer-text {
