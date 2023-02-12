@@ -606,13 +606,8 @@ h5 {
     margin: 0;
   }
 
-  .div6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .div6 {
+  .div6, .div7{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -622,10 +617,7 @@ h5 {
   .div7 h2 {
     position: relative;
     top: -20px;
-
-    left: 5px;
     text-align: center;
-
     margin: auto;
     align-items: center;
   }
