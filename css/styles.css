@@ -556,24 +556,29 @@ h5 {
     text-align: center;
   }
 
+  .container-fluid {
+    padding: 0px !important;
+  }
+
   #border-box {
-    display: grid;
+    /* display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
     height: 125vh;
     border: 1px solid black;
-    /* border-bottom: 0; */
-    margin: 3%;
-    z-index: -1;
+    border-bottom: 1px solid black;
+    margin: 5%; 
+    margin-bottom: 5%;
   }
 
   .parent {
+    width: 100%;
     display: grid;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80px 8% 5% 40px 40px 70% 50px;
+    grid-template-rows: 80px 8% 5% 50px 50px 70% 50%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     border: none;
@@ -600,21 +605,25 @@ h5 {
     margin: 0;
   }
 
-  .div6 h2 {
-    position: relative;
-    top: 0;
-
-    left: -10px;
-
-    margin: auto;
+  .div6{
+    display: flex;
     align-items: center;
+    justify-content: center;
   }
+
+  .div6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   .div7 h2 {
     position: relative;
-    top: -15px;
+    top: -20px;
 
     left: 5px;
+    text-align: center;
 
     margin: auto;
     align-items: center;
@@ -629,13 +638,6 @@ h5 {
     color: #00ddff;
   }
 
-  .div6 h2 {
-    text-align: start;
-  }
-
-  .div7 h2 {
-    text-align: initial;
-  }
 
   h3 {
     font-size: 12px !important;
@@ -655,11 +657,26 @@ h5 {
     top: 40%;
     width: 100vw;
     height: 60%;
+   
+  }
+
+  #portfolio {
+    height: 100%;
+  }
+
+  #portfolio img {
+    height:100%;
   }
 
   .div8 {
-    position: relative;
-    left: -30%;
+    
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    top: 10px;
+    bottom: 0;
+    left: -25%;
   }
   #brands {
     width: 200px;
