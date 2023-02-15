@@ -301,10 +301,10 @@ h5 {
 
 @keyframes slide {
   from {
-    background-position: left;
+    background-position: right;
   }
   to {
-    background-position: right;
+    background-position: left;
   }
 }
 
@@ -616,7 +616,7 @@ h5 {
 
   .div7 h2 {
     position: relative;
-    top: -20px;
+    top: -10px;
     text-align: center;
     margin: auto;
     align-items: center;
