@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Set up email
   $to = "Sambryer10@hotmail.com";
-  $subject = "New message from contact form";
+  $subject = "New message sambyerdesign.com";
   $body = "Name: $name\nEmail: $email\nMessage: $message";
 
   // Send email
