@@ -88,17 +88,19 @@
                       <p class="mb-4">
                         Please enter your email and I will send over my portfolio shortly.
                       </p>
-                      <form action="#" class="mb-4">
+                      <form method="POST" action="portfolio_email.php" class="mb-4">
                         <div class="form-group">
                           <input
                             type="email"
+                            name="email"
                             class="form-control w-100 mr-3"
                             placeholder="Enter your email address"
+                            required
                           />
                         </div>
                         <div class="row">
                           <div class="col-12">
-                            <button class="btn btn-outline-dark">
+                            <button class="btn btn-outline-dark" value="Send">
                               Request
                             </button>
                           </div>
@@ -147,19 +149,19 @@
                         soon as I can.
                       </p>
 
-                      <form action="#">
+                      <form method="POST" action="contact_email.php">
                         <div class="form-group">
                           <label for="name">Your Name</label>
-                          <input type="text" class="form-control" id="name" />
+                          <input type="text" name="name" class="form-control" id="name" />
                         </div>
                         <div class="form-group">
                           <label for="email">Email Address</label>
-                          <input type="email" class="form-control" id="email" />
+                          <input type="email" name="email" class="form-control" id="email" />
                         </div>
                         <div class="form-group">
                           <label for="name">Message</label>
                           <textarea
-                            name="name"
+                            name="message"
                             id="name"
                             cols="40"
                             rows="4"
@@ -167,14 +169,16 @@
                           ></textarea>
                         </div>
                         <div class="form-group">
-                          <a
-                            href="mailto:tobyking13@gmail.com?subject=Contact Form Submission&body=Name:%20"
+                          <!-- <a
                             class="btn btn-outline-dark"
                             id="send-email"
-                            value="Sign up"
+                            value="Send"
                             class="btn btn-outline-dark"
                             >Send Email</a
-                          >
+                          > -->
+                          <button class="btn btn-outline-dark" value="Send" id="send-email">
+                            Send Message
+                          </button>
                         </div>
                         <div class="form-group"></div>
                       </form>
