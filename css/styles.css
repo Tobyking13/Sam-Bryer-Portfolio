@@ -682,3 +682,138 @@ h5 {
  
   }
 }
+
+@media screen and (orientation:landscape) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+  }
+
+  .container-fluid {
+    padding: 0px !important;
+  }
+
+  #border-box {
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    height: 125vh;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 5%; 
+    margin-bottom: 5%;
+  }
+
+  .parent {
+    width: 100%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 8% 5% 50px 50px 70% 50%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: none;
+  }
+
+  .div1 {
+    height: 75px;
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  }
+  #logo {
+    position: relative;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .div6, .div7{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .div7 h2 {
+    position: relative;
+    top: -10px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 22px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+    color: #00ddff;
+  }
+
+
+  h3 {
+    font-size: 12px !important;
+  }
+
+  h4 {
+    font-size: 8px !important;
+  }
+
+  h5 {
+    font-size: 8px !important;
+  }
+
+  .div17 {
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    width: 100vw;
+    height: 60%;
+   
+  }
+
+  #portfolio {
+    height: 100%;
+  }
+
+  #portfolio img {
+    height:100%;
+  }
+
+  .div8 {
+    position: relative;
+
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+    height: 100px;
+    top: 40px;
+    bottom: 0;
+    left: -25%;
+  }
+  #brands {
+    width: 200px;
+    height: 80px;
+  }
+
+  .footer-text {
+    display: none !important; 
+ 
+  }
+}
