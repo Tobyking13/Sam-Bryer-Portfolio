@@ -14,211 +14,222 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <title>Sam Bryer Design</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="border-dark" id="border-box">
-        <div class="parent">
-          <div class="div1">
-            <img src="./images/SB-LOGO-01.jpg" id="logo" alt="" />
-          </div>
-          <div class="div2">
-            <h1>SAM BRYER DESIGN</h1>
-          </div>
-          <div class="div3">
-            <h3>GRAPHIC DESIGNER BASED IN LONDON.</h3>
-          </div>
-          <div class="div4">
-            <h3>SPECIALISING IN ILLUSTRATION, TYPOGRAPHY AND ADVERTISING.</h3>
-          </div>
-          <div class="div5">
-            <h3>
-              PLEASE FEEL FREE TO DOWNLOAD MY PORTFOLIO AND GET IN CONTACT;
-            </h3>
-          </div>
-
-          <!-- PORTFOLIO -->
-          <div class="div6" id="portfolio-request">
-            <a href="" data-toggle="modal" data-target="#portfolioModal"
-              ><h2>PORTFOLIO</h2></a
-            >
-          </div>
-
-          <!-- PORTFOLIO MODAL -->
-
-          <div
-            class="modal fade"
-            id="portfolioModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="portfolio-form"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content rounded-0">
-                <div class="modal-body bg-3">
-                  <div class="px-3 to-front">
-                    <div class="row align-items-center">
-                      <div class="col text-right">
-                        <a
-                          href="#"
-                          class="close-btn"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true"
-                            ><span class="icon-close2"></span
-                          ></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="p-4 to-front">
-                    <div class="text-center">
-                      <div class="logo">
-                        <img
-                          src="./images/SB-LOGO-01.jpg"
-                          alt="Image"
-                          class="img-fluid mb-4"
-                        />
-                      </div>
-                      <h1>Portfolio.</h1>
-                      <p class="mb-4">
-                        Please enter your email and I will send over my portfolio shortly.
-                      </p>
-                      <form method="POST" action="portfolio_email.php" class="mb-4">
-                        <div class="form-group">
-                          <input
-                            type="email"
-                            name="email"
-                            class="form-control w-100 mr-3"
-                            placeholder="Enter your email address"
-                            required
-                          />
-                        </div>
-                        <div class="row">
-                          <div class="col-12">
-                            <button class="btn btn-outline-dark" value="Send">
-                              Request
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                      <p class="mb-0 cancel"><small>Thank you for your interest.</small> </p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CONTACT FORM -->
-          <div class="div7" id="contact-form">
-            <a
-              data-toggle="modal"
-              data-target="#emailModal"
-              href=""
-              ><h2>CONTACT ME</h2></a
-            >
-          </div>
-
-          <!-- MODAL CONTACT FORM -->
-          <div
-            class="modal fade"
-            id="emailModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="contact-form"
-            aria-hidden="true"
-          >
-            <div
-              class="modal-dialog modal-lg modal-dialog-centered"
-              role="document"
-            >
-              <div class="modal-content rounded-0">
-                <div class="modal-body py-0">
-                  <div class="d-flex main-content">
-                    <div class="bg-image promo-img mr-3"></div>
-                    <div class="content-text p-4">
-                      <h3>Contact Form</h3>
-                      <p>
-                        Please send me a message and I will get back to you as
-                        soon as I can.
-                      </p>
-
-                      <form method="POST" action="contact_email.php">
-                        <div class="form-group">
-                          <label for="name">Your Name</label>
-                          <input type="text" name="name" class="form-control" id="name" />
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Email Address</label>
-                          <input type="email" name="email" class="form-control" id="email" />
-                        </div>
-                        <div class="form-group">
-                          <label for="name">Message</label>
-                          <textarea
-                            name="message"
-                            id="name"
-                            cols="40"
-                            rows="4"
-                            class="form-control"
-                          ></textarea>
-                        </div>
-                        <div class="form-group">
-                          <!-- <a
-                            class="btn btn-outline-dark"
-                            id="send-email"
-                            value="Send"
-                            class="btn btn-outline-dark"
-                            >Send Email</a
-                          > -->
-                          <button class="btn btn-outline-dark" value="Send" id="send-email">
-                            Send Message
-                          </button>
-                        </div>
-                        <div class="form-group"></div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="div8">
-            <h4 id="clients-include">clients INCLUDE</h4>
-            <img src="./images/BRANDS-01.png" id="brands" alt="" />
-          </div>
-          <div class="div10"></div>
-          <div class="div11"></div>
-          <div class="div12"></div>
-          <div class="div13"></div>
-          <div class="div14"></div>
-          <div class="div15"></div>
-          <div class="div16"></div>
-          <div class="div17">
-            <div id="portfolio">
-              <img src="./images/WEBSITE-IMAGE-LONG YES-01.jpg" alt="" />
-              <!-- <img src="./images/WEBSITE-IMAGE-LONG YES-01.jpg" alt="" />
-              <img src="./images/WEBSITE-IMAGE-LONG YES-01.jpg" alt="" />
-              <img src="./images/WEBSITE-IMAGE-LONG YES-01.jpg" alt="" /> -->
-
-            </div>
-          </div>
+    <!-- <div class="container"> -->
+      <div class="parent">
+    <div id="grid-container">
+        <div class="grid-item-1">
+          <img src="./images/SB-LOGO-01.jpg" id="sb-logo" alt="" />
         </div>
-      </div>
+        <div class="grid-item-2" id="sb-title">
+          <h1>SAM BRYER DESIGN</h1>
+        </div>
+        <div class="grid-item-3" id="sb-occupation">
+          <h3>GRAPHIC DESIGNER BASED IN LONDON.</h3>
+        </div>
+        <div class="grid-item-4" id="sb-specialising">
+          <h3>SPECIALISING IN ILLUSTRATION, TYPOGRAPHY AND ADVERTISING.</h3>
+        </div>
+        <div class="grid-item-5" id="sb-contact">
+          <h3>
+            PLEASE FEEL FREE TO DOWNLOAD MY PORTFOLIO AND GET IN CONTACT.
+          </h3>
+        </div>
+
+        <!-- PORTFOLIO -->
+        <div class="grid-item-6" id="portfolio-request">
+          <a href="" data-toggle="modal" data-target="#portfolioModal"
+            ><h2 id="sb-portfolio">PORTFOLIO</h2></a
+          >
+        </div>
+
+       
+        <!-- CONTACT FORM -->
+        
+        <div class="grid-item-7" id="contact-form">
+          <a data-toggle="modal" data-target="#emailModal" href=""
+            ><h2 id="sb-contact-me">CONTACT ME</h2></a
+          >
+        </div>
+
+        
+      
+      
+        <div class="grid-item-8" id="clients">
+          <br>
+          <h4 id="clients-include">clients INCLUDE</h4>
+          <br>
+          <img src="./images/BRANDS-01.png" id="brands" alt="" />
+        </div>
+
+        <div class="grid-item-9">
+          <img src="./images/WEBSITE-IMAGE-LONG YES-01.jpg" alt="Sam Bryer Portfolio" id="portfolio-img"/>
+        </div>
+      <!-- </div> -->
+    </div>
       <footer>
         <div class="footer-text">
           <h5>©2023 SAM BRYER DESIGN</h5>
         </div>
       </footer>
     </div>
-    
+  </div>
+  
+   <!-- PORTFOLIO MODAL -->
+
+   <div
+   class="modal fade"
+   id="portfolioModal"
+   tabindex="-1"
+   role="dialog"
+   aria-labelledby="portfolio-form"
+   aria-hidden="true"
+ >
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content rounded-0">
+       <div class="modal-body bg-3">
+         <div class="px-3 to-front">
+           <div class="row align-items-center">
+             <div class="col text-right">
+               <a
+                 href="#"
+                 class="close-btn"
+                 data-dismiss="modal"
+                 aria-label="Close"
+               >
+                 <span aria-hidden="true"
+                   ><span class="icon-close2"></span
+                 ></span>
+               </a>
+             </div>
+           </div>
+         </div>
+         <div class="p-4 to-front">
+           <div class="text-center">
+             <div class="logo">
+               <img
+                 src="./images/SB-LOGO-01.jpg"
+                 alt="Image"
+                 class="img-fluid mb-4"
+               />
+             </div>
+             <h1>Portfolio.</h1>
+             <p class="mb-4">
+               Please enter your email and I will send over my portfolio
+               shortly.
+             </p>
+             <form
+               method="POST"
+               action="portfolio_email.php"
+               class="mb-4"
+             >
+               <div class="form-group">
+                 <input
+                   type="email"
+                   name="email"
+                   class="form-control w-100 mr-3"
+                   placeholder="Enter your email address"
+                   required
+                 />
+               </div>
+               <div class="row">
+                 <div class="col-12">
+                   <button class="btn btn-outline-dark" value="Send">
+                     Request
+                   </button>
+                 </div>
+               </div>
+             </form>
+             <p class="mb-0 cancel">
+               <small>Thank you for your interest.</small>
+             </p>
+           </div>
+         </div>
+       </div>
+     </div>
+ </div>
+</div>
+
+
+<!-- MODAL CONTACT FORM -->
+<div
+class="modal fade"
+id="emailModal"
+tabindex="-1"
+role="dialog"
+aria-labelledby="contact-form"
+aria-hidden="true"
+>
+<div
+  class="modal-dialog modal-lg modal-dialog-centered"
+  role="document"
+>
+  <div class="modal-content rounded-0">
+    <div class="modal-body py-0">
+      <div class="d-flex main-content">
+        <div class="bg-image promo-img mr-3"></div>
+        <div class="content-text p-4">
+          <h3>Contact Form</h3>
+          <p>
+            Please send me a message and I will get back to you as
+            soon as I can.
+          </p>
+
+          <form method="POST" action="contact_email.php">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                id="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Message</label>
+              <textarea
+                name="message"
+                id="name"
+                cols="40"
+                rows="4"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button
+                class="btn btn-outline-dark"
+                value="Send"
+                id="send-email"
+              >
+                Send Message
+              </button>
+            </div>
+            <div class="form-group"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  
+  
   </body>
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 
   <script src="./js/script.js"></script>
